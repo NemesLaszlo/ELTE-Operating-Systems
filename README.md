@@ -1,9 +1,12 @@
 # ELTE-Operating-Systems
 This repository contains the tasks / files and details of the ELTE Operating systems course.
 
+### Contact
+- Email: `laszlo.nemes@inf.elte.hu` `wow.laszlo@gmail.com` `lnemes@apple.com` `nemesl@starschema.net`
+
 ### ELTE server
-- Server: opsys.inf.elte.hu
-- Login: The `neptun code` in lowercase and then the password (infes azonosító)
+- Server: `opsys.inf.elte.hu`
+- Login: The `neptun code` in lowercase and then the `password` (infes azonosító)
 
 ### Content and thematic:
 - Basics of C, file management, binary, line-by-line file reading, pointers, "strings" etc.
