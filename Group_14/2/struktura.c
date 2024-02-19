@@ -48,10 +48,10 @@ void id_setup()
         while (!feof(infile))
         {
             id = aktual->id;
-			free(actual);
+			free(aktual);
             aktual = file_read(infile);
         }
-		free(actual);
+		free(aktual);
     }
     fclose(infile);
     id++;
