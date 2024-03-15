@@ -1,0 +1,45 @@
+1,
+Közös számlálás - Kászítsünk C - ben egy egyszerű alkalmazást amely során a Szülő és egy Gyereke közösen számol el háromig. 
+Most a kiírásra is figyeljünk oda, hogy felváltva számoljanak. Elsőre a szülő majd a gyerek. Ne egyszerű karakteres üzenetet küldjünk, hogy számoljanak, hanem próbáljunk meg enumot használni. 
+Pl. counting - ot küldjön Pipe-on keresztül a szőlő a gyereknek. (Kiíráshoz a szülőnél egy speep(1) segítség lehet a ciklusban.) Szülő várja meg a child befejezését (Wait).
+
+Példa a futásra:
+Parent mondja: 1
+Child mondja: 1
+Parent mondja: 2
+Child mondja: 2
+Parent mondja: 3
+Child mondja: 3
+
+2,
+Gyerekek közötti kommunikáció - Írjunk egy egyszerű alkalmazást C -ben, ahol a Szülőnek kettő Gyereke van. A szőlő olvasson be konzolról egy számot (ellenőrzés nem kell, jó a bemenet feltételezzük).
+A szülő a beolvasott számot Pipe-on küldje el az első gyereknek, aki ezt írja ki. Majd az első gyerek ezt a kapott számot küldje el a második gyereknek. 
+Ezt követően küldjön el ennek a számnak megfelelő mennyiségő random számot is a második gyereknek. A második gyerek írja ki a kapott számot ahány random szám fog érzekzni,
+majd ezen random számokat is írja ki. A szülő várja meg a gyerekek befejezését (Wait).
+
+Példa futtásra:
+communicate_childs 6
+Child_1 olvasta uzenet: 6
+Child_2 olvasta uzenet: 6
+Child_2 olvasta random szam: 749
+Child_2 olvasta random szam: 489
+Child_2 olvasta random szam: 529
+Child_2 olvasta random szam: 659
+Child_2 olvasta random szam: 870
+Child_2 olvasta random szam: 831
+
+3, 
+Pipe on keresztül struktúrák - Írjun egy alkalmazást C -ben amely során a Szülő "munkákat oszt ki". 
+Használjuk struktúrát a munkások tárolására (Id,Név,Cím) - egyszerűen kézzel vegyünk fel párat.
+A munka kiosztás a következő: A szülő elküldi elsősorban a "munka" nevét ("string" - karaktertömb), ezt követően elküldi hány embernek kell ezen dolgoznia (int), majd ezen munkásokat küldi mint struktúrák 
+(ha tudjuk oldjuk meg ciklus nélkül a küldést - egy write-al minden munkást). A gyerek írja ki a munkát és az adott számot, hogy hány ember fog ezen dolgozni, majd írja ki a munkások adatait is.
+Szülő várja meg a child befejezését (Wait).
+
+Példa futtatásra:
+Child: A Fertotlenites munka ennyi emberrel: 3 kerül elvégzésre.
+Received: Id: 1 and Name: Bela and Address: Budapest
+Received: Id: 2 and Name: Janos and Address: Miskolc
+Received: Id: 3 and Name: Mark and Address: Szeged
+
+
+
